@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "sspvp",
+  "version": "${version}",
+  "name": "SSPVP",
+  "description": "A clean Minecraft PvP mod with HUD and GUI",
+  "authors": [
+    "superielYT"
+  ],
+  "contact": {
+    "homepage": "https://github.com/superielYT/SSPVP"
+  },
+  "license": "MIT",
+  "icon": "assets/sspvp/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.sspvp.SSPVPMod"
+    ],
+    "client": [
+      "com.sspvp.client.SSPVPClient"
+    ]
+  },
+  "mixins": [
+    "sspvp.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
